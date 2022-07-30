@@ -1,0 +1,19 @@
+{
+  "name": "jitu-typescript-to-do",
+  "version": "1.0.0",
+  "description": "A todo app in TypeScript",
+  "main": "script.js",
+  "scripts": {
+    "start": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karianmash/jitu-typescript-to-do.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karianmash/jitu-typescript-to-do/issues"
+  },
+  "homepage": "https://github.com/karianmash/jitu-typescript-to-do#readme"
+}

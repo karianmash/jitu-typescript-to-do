@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typed Todo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Todo Container -->
+    <div class="container">
+      <div id="getModalBtn">
+        <h5>Add a task</h5>
+      </div>
+      <!-- To-do status -->
+      <div class="todo-status">
+        <div class="status" id="all-todos">All tasks</div>
+        <div class="status" id="uncomplete">Uncomplete</div>
+        <div class="status" id="completed">Completed</div>
+      </div>
+      <!-- To-dos container -->
+      <div class="to-do-container"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="myModal">
+      <div class="add-todo-container">
+        <!-- title -->
+        <div class="title">
+          <h4>Add Task Here</h4>
+          <span class="close">&times;</span>
+        </div>
+        <!-- Form -->
+        <form action="#">
+          <!-- Todo title -->
+          <input
+            id="title"
+            class="form-input"
+            type="text"
+            placeholder="Add todo title"
+            required
+          />
+          <!-- Todo Description -->
+          <textarea
+            id="description"
+            class="form-input"
+            style="height: 5rem"
+            placeholder="Add description..."
+            required
+          ></textarea>
+          <!-- Date added -->
+          <input
+            id="date"
+            class="form-input"
+            type="date"
+            id="birthday"
+            name="birthday"
+            required
+          />
+          <!-- Submit todo -->
+          <input
+            id="submit"
+            style="height: 4rem"
+            class="form-input"
+            type="submit"
+            value="Submit Todo"
+            required
+          />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      let all = document.getElementById("all-todos");
+      all.addEventListener("click", () => {
+        window.location.reload();
+      });
+    </script>
+    <!-- Icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
